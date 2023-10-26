@@ -33,6 +33,24 @@
 
 <!-- Forma de saida ABREVIADA/SIMPLICADA -->
 <p>Estamos no <?=$curso?> em <?=$ano?> </p>
+
+<hr>
+
+<?php
+// Constantes (recomenda-se dar nome em MAIUSCULAS)
+
+//  Forma antiga, tradicional
+define("AUTOR", "Giuseppe costa strapaicci");
+
+// Forma moderna, atual
+const EMPRESA = "ABC tecnologia";
+const ANO_FUNDACAO = 2000;
+?>
+
+<!-- Saídas -->
+<p>Autor do site: <?=AUTOR?> </p>
+<p>Nome da empresa: <?=EMPRESA?> </p>
+<p>Fundada em: <?=ANO_FUNDACAO?> </p>
     
    
 
