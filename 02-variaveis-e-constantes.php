@@ -39,6 +39,8 @@
     // Saida com CONCATENAÇÃO
     echo '<p>estamos no '.$curso.' em' .$ano. '</p>';
     echo "<p>estamos no ".$curso." em" .$ano. "</p>";
+
+
     
 ?>
 
