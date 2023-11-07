@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionais</title>
+    <style>
+        .repor{ color: red;}
+        .urgente {color: blueviolet;}
+        .normal {color: green;}
+    </style>
 </head>
 <body>
     <h1>Condicionais (if, else, elself)</h1>
@@ -25,7 +30,7 @@
     <?php
     //Controle de Estoque
     $produto = "Ultrabook dell";
-    $qtdEmEstoque = 10; // o que temos no momento
+    $qtdEmEstoque = 0; // o que temos no momento
     $qtdcritica = 2; // mínimo necessario
     ?>
 
@@ -41,7 +46,7 @@ if($qtdEmEstoque < $qtdcritica ){
 
     //condicional SIMPLES/ANINHADA
     if($qtdEmEstoque === 0){
-        echo "<p class='urgente >URGENTE</p>";
+        echo "<p class='urgente'>URGENTE</p>";
     }
 } else {
 /* // Caso conteario, simplesmente monstrar
