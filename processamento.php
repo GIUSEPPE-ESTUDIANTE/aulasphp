@@ -26,11 +26,19 @@
     ?>
     <h2>Dados recebidos</h2>
     <ul>
-         <li>Nome:   <?=$nome?></li>
-         <li>E-mail: <?=$email?> </li>
-         <li>Data de nascimento: <?= $nascimento?>  </li>
-         <li>mensagem: <?= $mensagem ?> </li>
+        <li>Nome: <?=$nome?></li>
+        <li>E-mail: <?=$email?></li>
+        <!-- Se mensagem NÃO ESTIVER VAZIO -->
+        <?php if( !empty($nascimento)){ ?>
+            <li>Data de nascimento: <?=$nascimento?></li>
+         <?php } ?>
 
+
+        <!-- Se mensagem NÂO ESTIVER VAZIO -->
+
+        <?php if( !empty($mensagem)){ ?>
+            <li>Mensagem: <?=$mensagem?></li>
+         <?php } ?>
 
     </ul>
 <?php } ?>
