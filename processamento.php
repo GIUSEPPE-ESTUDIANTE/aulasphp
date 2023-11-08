@@ -20,7 +20,7 @@
 
     if( empty($nome) || empty($email)){
     ?>
-    <p>Você deve preencher nome e e-mail vagabundo!</p>
+    <p> nome e e-mail vagabundo!</p>
     <?php
     }else {
     ?>
