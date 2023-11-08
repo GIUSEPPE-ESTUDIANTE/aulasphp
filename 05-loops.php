@@ -7,12 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops</title>
     <style>
-        ol li:nth-child(odd) { color: blue;}
-        ol li:nth-child(even) { color: red;}
+    ol li:nth-child(odd) { color: blue;}
+    ol li:nth-child(even) { color: red;}
     </style>
 </head>
 
 <body>
+<!-- Usando o foreach para acessar os dados
+do array criado em outro arquivo (acessível
+devido ao incluide) -->
+<?php foreach ($linguagens as $linguagem){ ?>
+        <p><i><?=$linguagem?></i></p>
+<?php } ?> 
+
+
 <p> <?=ESCOLA?> - <?=$anoLetivo?></p>
     <h1>Loops</h1>
     <hr>
