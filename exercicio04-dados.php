@@ -15,15 +15,16 @@ e mostrá-los usando elementos HTML (da forma que você quiser). -->
 
 
 <?php
-$preco = $_POST ["preço"];
+$preco = $_POST ["preco"];
 $produto = $_POST ["produto"];
 $fabricante = $_POST ["fabricante"];
 $descricao = $_POST ["descricao"];
    ?>
-   <p></p>
-<p></p>
-<p></p>
-<p></p>
+   <p><?=$produto?></p>
+<p><?=$preco?></p>
+<p>R$ <?=number_format($preco, 2, ",",".")?></p>
+<p><?=$descricao?></p>
 </ul>
+
 </body>
 </html>
